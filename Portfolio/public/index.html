@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathit Joshi - Full Stack Developer</title>
+  
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Vue.js CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- The data-theme attribute will be controlled by Vue.js -->
+<body class="font-inter">
+  <div id="app" :data-theme="theme">
+      <!-- Navigation -->
+      <nav-component :theme="theme" :toggle-theme="toggleTheme"></nav-component>
+      
+      <!-- Hero Section -->
+      <hero-component :profile="profile" :theme="theme"></hero-component>
+      
+      <!-- About Section -->
+      <about-component :profile="profile" :theme="theme"></about-component>
+      
+      <!-- Skills Section -->
+      <skills-component :skills="skills" :theme="theme"></skills-component>
+      
+      <!-- Services Section (Replaces Testimonials) -->
+      <services-component :services="services" :theme="theme"></services-component>
+      
+      <!-- Projects Section -->
+      <projects-component :projects="projects" :theme="theme"></projects-component>
+      
+      <!-- Contact Section -->
+      <contact-component :theme="theme"></contact-component>
+      
+      <!-- Footer -->
+      <footer-component :theme="theme"></footer-component>
+      
+      <!-- Loading Overlay -->
+      <div v-if="loading" class="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50">
+          <div class="loading-spinner"></div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+      <button @click="scrollToTop" :class="['scroll-to-top', { 'show': showScrollToTop }]">
+          <i class="fas fa-arrow-up"></i>
+      </button>
+  </div>
+
+  <!-- IMPORTANT: type="module" is crucial for app.js -->
+  <script src="app.js" type="module"></script>
+</body>
+</html>
