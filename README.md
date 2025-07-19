@@ -62,26 +62,26 @@ A modern, futuristic portfolio website built with the MEVN stack (MongoDB, Expre
    **Note for Gmail users:** If you use Gmail, you might need to generate an "App password" instead of your regular password, especially if you have 2-Factor Authentication enabled. You can usually find this in your Google Account security settings.
 
 5. **Start Development Server**
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
    
    Or for development with auto-restart:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
     Or 
-   \`\`\`bash
+   ```bash
    node server.js
-   \`\`\`
+   ```
 
 6. **Visit Application**
    Open http://localhost:3000 in your browser
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 mevn-portfolio/
 ├── server.js              # Main server file
 ├── models/
@@ -96,7 +96,7 @@ mevn-portfolio/
 ├── package.json           # Dependencies
 ├── .env                   # Environment variables
 └── README.md             # This file
-\`\`\`
+```
 
 ## 🔌 API Endpoints
 
