@@ -335,7 +335,7 @@ const SkillsComponent = {
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div v-for="category in ['Frontend', 'Backend', 'Database', 'Cloud', 'AI/ML/DS', 'Design', 'Documentation', 'Networking', 'Systems' , 'Algorithms', 'Version Control', 'Programming']" 
+                <div v-for="category in ['Frontend', 'Backend', 'Database', 'Cloud', 'AI/ML/DS', 'Design', 'Documentation', 'Networking', 'Systems', 'Algorithms', 'Version Control', 'Programming', 'Soft Skills']" 
                      :key="category"
                      class="glass rounded-xl p-6 hover-lift animate-on-scroll">
                     <h3 class="text-xl font-semibold mb-6 text-center">{{ category }}</h3>
