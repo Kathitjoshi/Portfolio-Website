@@ -197,7 +197,7 @@ const HeroComponent = {
                 
                 
                 <h1 class="hero-title text-5xl md:text-7xl font-bold mb-4">
-                    {{ profile?.name || 'Alex Johnson' }}
+                    {{ profile?.name || 'Kathit Joshi' }}
                 </h1>
                 
                 <div class="hero-subtitle text-xl md:text-2xl text-gray-300 mb-8 h-8">
@@ -206,7 +206,7 @@ const HeroComponent = {
                 </div>
                 
                 <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-                    {{ profile?.bio || 'Passionate developer creating innovative web solutions.' }}
+                    {{ profile?.bio || 'A curious college student learning and finding his place in the world, Ready to collab on anything interesting.' }}
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -243,9 +243,9 @@ const AboutComponent = {
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="animate-on-scroll fade-in-left">
-                    <h3 class="text-2xl font-semibold mb-6">Hello! I'm {{ profile?.name || 'Alex Johnson' }}</h3>
+                    <h3 class="text-2xl font-semibold mb-6">Hello! I'm {{ profile?.name || 'Kathit Joshi' }}</h3>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        {{ profile?.bio || 'Passionate developer with years of experience creating innovative web solutions.' }}
+                        {{ profile?.bio || 'A curious college student learning and finding his place in the world, Ready to collab on anything interesting.' }}
                     </p>
                     <p class="text-gray-300 mb-8 leading-relaxed">
                         I love turning complex problems into simple, beautiful and intuitive solutions. 
@@ -256,15 +256,15 @@ const AboutComponent = {
                     <div class="grid grid-cols-2 gap-4 text-sm">
                         <div>
                             <strong class="text-indigo-400">Email:</strong>
-                            <p class="text-gray-300">{{ profile?.email || 'alex@example.com' }}</p>
+                            <p class="text-gray-300">{{ profile?.email || 'kathit@example.com' }}</p>
                         </div>
                         <div>
                             <strong class="text-indigo-400">Phone:</strong>
-                            <p class="text-gray-300">{{ profile?.phone || '+1 (555) 123-4567' }}</p>
+                            <p class="text-gray-300">{{ profile?.phone || '+91 9148971674' }}</p>
                         </div>
                         <div>
                             <strong class="text-indigo-400">Location:</strong>
-                            <p class="text-gray-300">{{ profile?.location || 'San Francisco, CA' }}</p>
+                            <p class="text-gray-300">{{ profile?.location || 'Bangalore, Karnataka, India' }}</p>
                         </div>
                         <div>
                             <strong class="text-indigo-400">Status:</strong>
@@ -335,7 +335,7 @@ const SkillsComponent = {
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div v-for="category in ['Frontend', 'Backend', 'Database', 'Cloud', 'AI/ML/DS', 'Design', 'Documentation', 'Networking', 'Systems', 'Algorithms', 'Version Control', 'Programming', 'Soft Skills']" 
+                <div v-for="category in ['Frontend', 'Backend', 'Database', 'Cloud', 'AI/ML/DS', 'Design', 'Documentation', 'Networking', 'Systems' , 'Algorithms', 'Version Control', 'Programming', 'Soft Skills']" 
                      :key="category"
                      class="glass rounded-xl p-6 hover-lift animate-on-scroll">
                     <h3 class="text-xl font-semibold mb-6 text-center">{{ category }}</h3>
